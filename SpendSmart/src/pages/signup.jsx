@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function Signup(){
     return (
         <div>
@@ -7,6 +8,7 @@ export function Signup(){
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <button type="submit">Sign Up</button>
+                <h5>Already have an account? <Link to="/login">Login</Link></h5>
             </form>
         </div>
     );
